@@ -1,0 +1,58 @@
+.media {
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        top: 108px;
+        left: -10px;
+        background: no-repeat left/100% url("../img/Ellipse 60.svg");
+        z-index: -1;
+    }
+
+    &::before {
+        content: "";
+        width: 82px;
+        height: 44px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: no-repeat left/100% url("../img/Group 2.svg");
+        z-index: -1;
+    }
+}
+
+.media__btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.media__preview {
+    border: 3px solid $color-secondary;
+    border-radius: 8px;
+    padding: 3.3px;
+}
+
+.media__play {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    top: 65px;
+    left: calc(50% - 35px);
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 44%;
+        top: 30%;
+        border: 12px solid transparent; 
+        border-left: 12px solid $color-secondary;
+    }
+}
