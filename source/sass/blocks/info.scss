@@ -1,0 +1,20 @@
+.info {
+    margin: 58px $main-gap 0 $main-gap;
+}
+
+.info__title {
+    margin: 0;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+}
+
+.info__pink {
+    color: $color-secondary;
+}
+
+.info__description {
+    margin: 20px 0;
+}
