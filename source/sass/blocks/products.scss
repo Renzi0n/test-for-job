@@ -1,0 +1,26 @@
+.products {
+    margin-left: $main-gap;
+    margin-top: 55px;
+}
+
+.products__title {
+    @include title; 
+    margin: 0;
+}
+
+.products__sort {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.products__sort-select {
+    border: none;
+    color: #939598;
+    margin-left: 4px;
+    appearance: none;
+    background: url('../img/Frame (1).svg') no-repeat right center;
+    min-width: 135px;
+}
