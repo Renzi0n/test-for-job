@@ -1,8 +1,8 @@
 {
-  "name": "pink-19",
+  "name": "photostudio",
   "version": "17.0.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Тестовое задание 'Сайт фотостудии'",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
