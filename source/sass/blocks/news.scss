@@ -1,0 +1,31 @@
+.news {
+    margin: 60px $main-gap 0 $main-gap;
+}
+
+.news__text {
+    @include title-secondary;
+    margin: 0;
+}
+
+.news__title {
+    @include title-primary;
+    margin: 0;
+}
+
+.news__wrapper {
+    margin-top: 20px;
+    margin-bottom: 29px;
+}
+
+.news__btn {
+    border-radius: 6px;
+    border: 1px solid $color-secondary;
+    color: $color-secondary;
+    min-height: 38px;
+    width: 100%;
+    background-color: transparent;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
