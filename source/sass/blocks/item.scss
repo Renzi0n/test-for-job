@@ -102,7 +102,7 @@
 
 .item__time input:checked + .item__radio {
     background-color: $color-secondary;
-    color: #FFFFFF;
+    color: $color-sup;
 }
 
 .item__wrapper {

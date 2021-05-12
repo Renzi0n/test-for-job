@@ -39,14 +39,14 @@
 
 .spoiler__checkbox:checked + .spoiler__question {
     background-color: $color-secondary;
-    color: #FFFFFF;
+    color: $color-sup;
 
     &::after {
         content: "";
         width: 10px;
         height: 3px;
         position: absolute;
-        background-color: #FFFFFF;
+        background-color: $color-sup;
         transform: rotate(35deg);
         border-radius: 4px;
         right: 11.6px;
@@ -58,7 +58,7 @@
         width: 10px;
         height: 3px;
         position: absolute;
-        background-color: #FFFFFF;
+        background-color: $color-sup;
         transform: rotate(-35deg);
         border-radius: 4px;
         right: 20px;
