@@ -1,0 +1,13 @@
+.faq {
+    margin-top: 62px;
+}
+
+.faq__question {
+    margin: 0;
+    line-height: 19px;
+    color: $color-secondary;
+}
+
+.faq__title {
+    @include title-primary;
+}
