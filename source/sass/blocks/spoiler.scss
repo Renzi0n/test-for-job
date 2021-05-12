@@ -20,8 +20,8 @@
         background-color: $color-secondary;
         transform: rotate(-35deg);
         border-radius: 4px;
-        right: 11.6px;
-        top: 21.8px;
+        right: 11px;
+        top: 21px;
     }
 
     &::before {
@@ -32,8 +32,8 @@
         background-color: $color-secondary;
         transform: rotate(35deg);
         border-radius: 4px;
-        right: 20px;
-        top: 22px;
+        right: 18px;
+        top: 21px;
     }
 }
 
@@ -49,8 +49,8 @@
         background-color: $color-sup;
         transform: rotate(35deg);
         border-radius: 4px;
-        right: 11.6px;
-        top: 21.8px;
+        right: 11px;
+        top: 21px;
     }
 
     &::before {
@@ -61,8 +61,8 @@
         background-color: $color-sup;
         transform: rotate(-35deg);
         border-radius: 4px;
-        right: 20px;
-        top: 22px;
+        right: 18px;
+        top: 21px;
     }
 }
 
