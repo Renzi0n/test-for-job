@@ -2,7 +2,7 @@
     margin-top: 55px;
 }
 
-.products__title-primary {
+.products__title {
     @include title-primary; 
     padding-left: $main-gap;
     margin: 0;

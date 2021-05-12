@@ -1,5 +1,6 @@
 .faq {
     margin-top: 62px;
+    margin: 62px $main-gap 0 $main-gap;
 }
 
 .faq__question {
@@ -10,4 +11,9 @@
 
 .faq__title {
     @include title-primary;
+    margin: 3px 0 0;
+}
+
+.faq__wrapper {
+    margin-top: 23px;
 }
