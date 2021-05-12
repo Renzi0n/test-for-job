@@ -151,7 +151,6 @@ ul {
   margin: 3px 0 30px; }
 
 .products {
-  margin-left: 16px;
   margin-top: 55px; }
 
 .products__title {
@@ -159,6 +158,7 @@ ul {
   font-weight: 700;
   font-size: 32px;
   line-height: 36px;
+  padding-left: 16px;
   margin: 0; }
 
 .products__sort {
@@ -166,7 +166,8 @@ ul {
   font-size: 14px;
   line-height: 16px;
   display: flex;
-  margin-top: 10px; }
+  margin-top: 10px;
+  padding-left: 16px; }
 
 .products__sort-select {
   border: none;
@@ -179,7 +180,11 @@ ul {
   min-width: 135px; }
 
 .item {
-  margin: 20px 0; }
+  margin: 4px 0 46px;
+  padding: 16px 0 18px 16px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); }
+  .item:last-of-type {
+    margin-bottom: 0; }
 
 .item__info {
   margin-top: 32px; }
@@ -282,8 +287,8 @@ ul {
   color: #FFFFFF;
   border: none;
   border-radius: 6px;
-  padding: 10px 12px;
-  margin-left: auto; }
+  margin-left: auto;
+  padding: 10px 12px; }
 
 .gallery {
   width: 100%;
@@ -369,3 +374,231 @@ ul {
 .option__checkbox:checked + .option__label::before {
   background-color: #EE3D48;
   background-image: url("../img/check.svg"); }
+
+.faq {
+  margin-top: 62px;
+  margin: 62px 16px 0 16px; }
+
+.faq__text {
+  margin: 0;
+  line-height: 19px;
+  color: #EE3D48; }
+
+.faq__title {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 3px 0 0; }
+
+.faq__wrapper {
+  margin-top: 23px; }
+
+.spoiler {
+  box-shadow: 0px 6px 21px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 10px; }
+
+.spoiler__question {
+  display: block;
+  padding: 14.5px 20px 14.5px 8px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  position: relative; }
+  .spoiler__question::after {
+    content: "";
+    width: 10px;
+    height: 3px;
+    position: absolute;
+    background-color: #EE3D48;
+    transform: rotate(-35deg);
+    border-radius: 4px;
+    right: 11.6px;
+    top: 21.8px; }
+  .spoiler__question::before {
+    content: "";
+    width: 10px;
+    height: 3px;
+    position: absolute;
+    background-color: #EE3D48;
+    transform: rotate(35deg);
+    border-radius: 4px;
+    right: 20px;
+    top: 22px; }
+
+.spoiler__checkbox:checked + .spoiler__question {
+  background-color: #EE3D48;
+  color: #FFFFFF; }
+  .spoiler__checkbox:checked + .spoiler__question::after {
+    content: "";
+    width: 10px;
+    height: 3px;
+    position: absolute;
+    background-color: #FFFFFF;
+    transform: rotate(35deg);
+    border-radius: 4px;
+    right: 11.6px;
+    top: 21.8px; }
+  .spoiler__checkbox:checked + .spoiler__question::before {
+    content: "";
+    width: 10px;
+    height: 3px;
+    position: absolute;
+    background-color: #FFFFFF;
+    transform: rotate(-35deg);
+    border-radius: 4px;
+    right: 20px;
+    top: 22px; }
+
+.spoiler__answer {
+  display: none;
+  margin: 0;
+  padding: 16px 10px;
+  color: #6A6A6A;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative; }
+  .spoiler__answer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 1px;
+    height: 120px;
+    background-color: #EE3D48; }
+
+.spoiler :checked ~ .spoiler__answer {
+  display: block; }
+
+.news {
+  margin: 60px 16px 0 16px; }
+
+.news__text {
+  margin: 0;
+  line-height: 19px;
+  color: #EE3D48;
+  margin: 0; }
+
+.news__title {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0; }
+
+.news__wrapper {
+  margin-top: 20px;
+  margin-bottom: 29px; }
+
+.news__btn {
+  border-radius: 6px;
+  border: 1px solid #EE3D48;
+  color: #EE3D48;
+  min-height: 38px;
+  width: 100%;
+  background-color: transparent;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px; }
+
+.news-item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 20px;
+  position: relative; }
+  .news-item::before {
+    content: "";
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    left: 8px;
+    top: 299px;
+    background-image: url(../img/triangle.svg);
+    background-repeat: no-repeat; }
+  .news-item:last-of-type {
+    margin-bottom: 0; }
+
+.news-item__wrapper {
+  padding: 20px 8px 20px 8px; }
+
+.news-item__type {
+  color: #EE3D48;
+  margin: 0; }
+
+.news-item__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 4px;
+  margin-bottom: 8px; }
+
+.news-item__text {
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.news-item__date {
+  margin: 0;
+  color: #6A6A6A; }
+
+.contacts {
+  margin-top: 65px;
+  margin: 60px 16px 0 16px; }
+
+.contacts__text {
+  margin: 0;
+  line-height: 19px;
+  color: #EE3D48;
+  margin: 0; }
+
+.contacts__title {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 5px;
+  margin-bottom: 20px; }
+
+.contacts__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 18px; }
+  .contacts__item::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-image: url("../img/phone.svg"); }
+
+.contacts__item--address::before {
+  background-image: url("../img/map-marker.svg"); }
+
+.contacts__item--email::before {
+  background-image: none; }
+
+.contacts__item--email .contacts__info {
+  border-bottom: none; }
+
+.contacts_email {
+  color: inherit; }
+
+.contacts__item-title {
+  margin: 0;
+  margin: 2px 0 4px 15px;
+  flex-grow: 1;
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700; }
+
+.contacts__info {
+  margin: 0 0 0 48px;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid #D5DAE0;
+  color: #6A6A6A; }
