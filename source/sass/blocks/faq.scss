@@ -3,10 +3,8 @@
     margin: 62px $main-gap 0 $main-gap;
 }
 
-.faq__question {
-    margin: 0;
-    line-height: 19px;
-    color: $color-secondary;
+.faq__text {
+    @include title-secondary;
 }
 
 .faq__title {

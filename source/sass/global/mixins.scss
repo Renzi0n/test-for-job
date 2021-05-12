@@ -5,6 +5,12 @@
     line-height: 36px;
 }
 
+@mixin title-secondary {
+    margin: 0;
+    line-height: 19px;
+    color: $color-secondary;
+}
+
 @mixin button-primary {
     font-family: "Roboto";
     font-weight: bold;
