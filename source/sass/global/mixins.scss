@@ -4,3 +4,15 @@
     font-size: 32px;
     line-height: 36px;
 }
+
+@mixin button-primary {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: $color-secondary;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+}

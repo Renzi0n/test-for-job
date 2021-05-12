@@ -7,6 +7,14 @@
 }
 
 @font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    src: url("../fonts/Roboto-Bold.woff2"),
+        url("../fonts/Roboto-Bold.woff");
+    font-weight: 700;
+}
+
+@font-face {
     font-family: "Work Sans";
     font-display: swap;
     src: url("../fonts/WorkSans-Regular.woff2"),

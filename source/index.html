@@ -118,59 +118,86 @@
           </div>
 
           <div class="item__options">
-            <h4>Доп. опции</h4>
+            <h4 class="item__options-title">Доп. опции</h4>
 
             <div class="item__options-wrapper">
 
-              <label class="option">
+              <div class="option">
                 <img src="img/photo option.jpg" alt="Фотобудка с ширмой миниатюра" width="60" height="60">
-                <h5 class="option__title">Разработка макета рамки</h5>
-                <span class="option__price">от 17 500 ₽</span>
-                <input type="checkbox" id="option#1" name="option#1" value="option#1">
+                <div class="option__text">
+                  <h5 class="option__title">Разработка макета рамки #1</h5>
+                  <p class="option__price">от 17 500 ₽</p>
+                </div>
+                <input class="option__checkbox visually-hidden" type="checkbox" id="option#1" name="option" value="option#1" checked>
+                <label class="option__label" for="option#1">
+                </label>
+              </div>
+
+              <div class="option">
+                <img src="img/photo option.jpg" alt="Фотобудка с ширмой миниатюра" width="60" height="60">
+                <div class="option__text">
+                  <h5 class="option__title">Разработка макета рамки #2</h5>
+                  <p class="option__price">от 17 600 ₽</p>
+                </div>
+                <input class="option__checkbox visually-hidden" type="checkbox" id="option#2" name="option" value="option#2">
+                <label class="option__label" for="option#2">
+                </label>
+              </div>
+
+              <div class="option">
+                <img src="img/photo option.jpg" alt="Фотобудка с ширмой миниатюра" width="60" height="60">
+                <div class="option__text">
+                  <h5 class="option__title">Разработка макета рамки #3</h5>
+                  <p class="option__price">от 17 700 ₽</p>
+                </div>
+                <input class="option__checkbox visually-hidden" type="checkbox" id="option#3" name="option" value="option#3">
+                <label class="option__label" for="option#3">
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="item__time">
+            <p class="item__time-title">Укажите время аренды</p>
+
+            <div class="item__time-wrapper">
+
+              <input class="visually-hidden" type="radio" id="1-hour" name="time" value="1-hour" checked>
+              <label class="item__radio" for="1-hour">
+                1 час
+              </label>
+
+              <input class="visually-hidden" type="radio" id="2-hour" name="time" value="2-hour">
+              <label class="item__radio" for="2-hour">
+                2 часa
+              </label>
+
+              <input class="visually-hidden" type="radio" id="3-hour" name="time" value="3-hour">
+              <label class="item__radio" for="3-hour">
+                3 часa
+              </label>
+              
+              <input class="visually-hidden" type="radio" id="5-hour" name="time" value="5-hour">
+              <label class="item__radio" for="5-hour">
+                5 часов
+              </label>
+
+              <input class="visually-hidden" type="radio" id="2-days" name="time" value="2-days">
+              <label class="item__radio" for="2-days">
+                выставка 2 дня
+              </label>
+
+              <input class="visually-hidden" type="radio" id="3-days" name="time" value="3-days">
+              <label class="item__radio" for="3-days">
+                выставка 3 дня
               </label>
 
             </div>
+          </div>
 
-            <div class="item__time">
-              <p>Укажите время аренды</p>
-
-              <div class="item__time-wrapper">
-
-                <label class="item__checkbox">
-                  <span>1 час</span>
-                  <input type="checkbox" id="1-hour" name="1-hour" value="1-hour">
-                </label>
-
-                <label class="item__checkbox">
-                  <span>2 часa</span>
-                  <input type="checkbox" id="2-hour" name="2-hour" value="2-hour">
-                </label>
-
-                <label class="item__checkbox">
-                  <span>3 часa</span>
-                  <input type="checkbox" id="3-hour" name="3-hour" value="3-hour">
-                </label>
-                
-                <label class="item__checkbox">
-                  <span>5 часов</span>
-                  <input type="checkbox" id="5-hour" name="5-hour" value="5-hour">
-                </label>
-
-                <label class="item__checkbox">
-                  <span>выставка 2 дня</span>
-                  <input type="checkbox" id="2-days" name="2-days" value="2-days">
-                </label>
-
-                <label class="item__checkbox">
-                  <span>выставка 3 дня</span>
-                  <input type="checkbox" id="3-days" name="3-days" value="3-days">
-                </label>
-
-              </div>
-            </div>
-
+          <div class="item__wrapper">
             <p class="item__price">17 000 ₽</p>
-
             <button class="item__btn" type="button">Оставить заявку</button>
           </div>
 
