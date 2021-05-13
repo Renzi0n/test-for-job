@@ -45,7 +45,7 @@
 .modal-gallery__wrapper {
     position: fixed;
     width: 320px;
-    height: 520px;
+    min-height: 520px;
     left: calc(50vw - 160px);
     top: calc(50vh - 260px);
     background-color: #FFFFFF;

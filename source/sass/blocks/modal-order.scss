@@ -1,0 +1,133 @@
+.modal-order {
+    width: 360px;
+    min-height: 468px;
+    left: calc(50vw - 180px);
+    top: calc(50vh - 260px);
+    padding: $main-gap;
+    box-sizing: border-box;
+}
+
+.modal-order__title {
+    @include title-primary;
+    margin: 0;
+}
+
+.modal-order__list {
+    margin-bottom: 0;
+    height: 213px;
+    overflow-y: scroll;
+}
+
+.modal-order__item {
+    padding: 16px 24px 16px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.modal-order__item-title,
+.modal-order__item-price {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.modal-order__item-size {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.modal-order__item-size span {
+    color: $color-sub;
+}
+
+.modal-order__time {
+    padding: 8px;
+    margin-right: 206px;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 6px;
+    border: 1px solid #D5DAE0;
+    background-color: #FFFFFF;
+}
+
+.modal-order__text-wrap {
+    padding-top: 16px;
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #EBEBEB;
+}
+
+.modal-order__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 9.5px;
+    margin-bottom: 0;
+}
+
+.modal-order__price {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0;
+}
+
+.modal-order__tel {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.modal-order__input {
+    width: 100%;    
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #EE3D48;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.modal-order__tel-select {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    border: none;
+    background-color: transparent;
+    padding: 8px 22px 8px 15px;
+    width: 158px;
+    font-size: 14px;
+    line-height: 16px;
+    background: #F5F5F5;
+    border-radius: 6px;
+}
+
+.modal-order__submit {
+    @include button-primary;
+    width: 100%;
+    height: 40px;
+}
+
+.modal-order__close {
+    position: absolute;
+}
+
+.modal-order__close {
+    background-color: transparent;
+    top: 8px;
+    right: 8px;
+
+    &::before {
+        background-color: #6A6A6A;
+    }
+
+    &::after {
+        background-color: #6A6A6A;
+    }
+}
