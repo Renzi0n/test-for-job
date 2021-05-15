@@ -612,11 +612,7 @@ ul {
   top: 0;
   z-index: 10;
   width: 100%;
-  height: 100%;
-  display: none; }
-
-.modal-gallery--show {
-  display: block; }
+  height: 100%; }
 
 .modal-gallery__sub {
   background-color: #000000;
