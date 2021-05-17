@@ -1,6 +1,6 @@
 import React, {Component, Suspense} from 'react';
-import Loader from '../../loader/loader';
 
+import Loader from '../../loader/loader';
 import OrderModalOption from './order-modal-option';
 import OrderModalTimeRent from './order-modal-time-rent';
 
