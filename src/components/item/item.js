@@ -1,10 +1,12 @@
-import React, {Component} from 'react';
+import React, {Component, Suspense} from 'react';
 
 import Option from './item-option';
-import ItemSlider from './item-slider';
 import ItemTimeRent from './item-time-rent';
 
 import {setTimeRentChecked, getPriceWithoutCoeff, getCurrentTimeRentCoeff, findIndex} from '../../utils/item';
+import Loader from '../loader/loader';
+
+const ItemSlider = React.lazy(() => import('./item-slider'));
 
 export default class Item extends Component {
 
@@ -65,7 +67,9 @@ export default class Item extends Component {
 
         return (
             <article className="item">
-                <ItemSlider />
+                <Suspense fallback={<Loader />}>
+                    <ItemSlider />
+                </Suspense>
 
                 <div className="item__info">
                     <h3 className="item__name">{name}</h3>

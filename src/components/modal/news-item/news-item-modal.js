@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import Loader from '../../loader/loader';
 
-import NewsItemModalSwiper from './news-item-modal-slider';
+const NewsItemModalSwiper = React.lazy(() => import('./news-item-modal-slider'));
 
 const NewsItemModal = ({closeAllModal, newsData}) => {
     const {name, text} = newsData;
@@ -9,7 +10,9 @@ const NewsItemModal = ({closeAllModal, newsData}) => {
         <div className="modal-gallery">
             <div className="modal-gallery__sub" onClick={closeAllModal}></div>
             <div className="modal-gallery__wrapper">
-                <NewsItemModalSwiper />
+                <Suspense fallback={<Loader />}>
+                    <NewsItemModalSwiper />
+                </Suspense>
 
                 <div className="modal-gallery__info-wrapper">
                     <p className="modal-gallery__type">Услуги</p>
