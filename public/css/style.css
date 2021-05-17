@@ -255,7 +255,7 @@ ul {
   display: flex;
   flex-wrap: wrap; }
 
-.item__radio {
+.item__radio-span {
   margin-right: 8px;
   margin-bottom: 7px;
   height: 26px;
@@ -265,7 +265,7 @@ ul {
   align-items: center;
   padding: 0 12px; }
 
-.item__time input:checked + .item__radio {
+.item__time input:checked + .item__radio-span {
   background-color: #EE3D48;
   color: #FFFFFF; }
 
@@ -360,12 +360,10 @@ ul {
   font-family: "Roboto Slab"; }
 
 .option__label {
-  margin-left: auto; }
-
-.option__label {
+  margin-left: auto;
   position: relative; }
-  .option__label::before {
-    content: "";
+  .option__span {
+    display: block;
     width: 13px;
     height: 13px;
     position: absolute;
@@ -374,7 +372,7 @@ ul {
     border-radius: 2px;
     border: 1px solid #EE3D48; }
 
-.option__checkbox:checked + .option__label::before {
+.option__checkbox:checked + .option__span {
   background-color: #EE3D48;
   background-image: url("../img/check.svg"); }
 
@@ -715,6 +713,23 @@ ul {
   padding: 16px;
   box-sizing: border-box; }
 
+.modal-order--success {
+  min-height: 80px;
+  top: calc(50vh - 80px);
+  border-radius: 8px;
+}
+
+.modal-order__text-success {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #EE3D48;
+}
+
 .modal-order__title {
   font-family: "Roboto Slab";
   font-weight: 700;
@@ -726,6 +741,13 @@ ul {
   margin-bottom: 0;
   height: 213px;
   overflow-y: scroll; }
+
+.modal-order__list::-webkit-scrollbar {
+  width: 3px; }
+
+.modal-order__list::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #EE3D48; }
 
 .modal-order__item {
   padding: 16px 24px 16px 0;
