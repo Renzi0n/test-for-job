@@ -11,7 +11,7 @@ const Contacts = () => {
                 <ul className="contacts__list">
                     <li className="contacts__item">
                         <h3 className="contacts__item-title">Телефон</h3>
-                        <p className="contacts__info">+7 495 123 45 67</p>
+                        <p className="contacts__info"><a className="contacts__tel" href="tel: 74951234567">+7 495 123 45 67</a></p>
                     </li>
 
                     <li className="contacts__item contacts__item--address">

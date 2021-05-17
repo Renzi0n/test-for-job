@@ -29,10 +29,15 @@ export default class News extends Component {
     };
 
     render () {
-        const addButton = this.state.newsCount < 20 ? <button className="news__btn" type="button" onClick={this.onAddButtonClick}>
-                                                            Показать еще
-                                                        </button>
-                                                        : null;
+        let addButton;
+
+        if (this.state.newsCount <= this.state.newsData.length) {
+            addButton = <button className="news__btn" type="button" onClick={this.onAddButtonClick}>
+                            Показать еще
+                        </button>;
+        } else {
+            addButton = null;
+        }
         
         return (
             <section className="news">

@@ -65,7 +65,7 @@ export default class OrderModal extends Component {
     
     render () {
 
-        const { orderData: {price, name, allOptionsPrice}, closeAllModal, onSubmitForm } = this.props;
+        const { orderData: {name, allOptionsPrice}, closeAllModal, onSubmitForm } = this.props;
         
         return (
             <div className="modal-gallery">
@@ -79,7 +79,7 @@ export default class OrderModal extends Component {
                                 <h3 className="modal-order__item-title">{name}</h3>
                                 <p className="modal-order__item-size">Размер: <span>2м x 1.5м x 2 м</span></p>
                             </div>
-                            <p className="modal-order__item-price">{price - allOptionsPrice} ₽</p>
+                            <p className="modal-order__item-price">{this.state.price - allOptionsPrice} ₽</p>
 
                             <select 
                                 className="modal-order__time" name="order-time" 

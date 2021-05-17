@@ -1,9 +1,9 @@
 import React from 'react';
 
-import MediaModal from './media-modal';
-import OrderModal from './order-modal';
-import SuccessModal from './success-modal';
-import NewsItemModal from './news-item-modal';
+import MediaModal from './media-modal/media-modal';
+import OrderModal from './order-modal/order-modal';
+import SuccessModal from './order-modal/success-modal';
+import NewsItemModal from './news-item/news-item-modal';
 
 const Modal = ({isMediaModal, orderData, newsData, isSuccessModal, closeAllModal, onSubmitForm}) => {
     document.body.style.overflow = "hidden";
