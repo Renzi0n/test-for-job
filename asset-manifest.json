@@ -20,8 +20,8 @@
     "static/js/3.8e06ab82.chunk.js.LICENSE.txt": "./static/js/3.8e06ab82.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a275566.js",
-    "static/js/3.8e06ab82.chunk.js",
-    "static/js/main.17927ffa.chunk.js"
+    "./static/js/runtime-main.0a275566.js",
+    "./static/js/3.8e06ab82.chunk.js",
+    "./static/js/main.17927ffa.chunk.js"
   ]
 }
